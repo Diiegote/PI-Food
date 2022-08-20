@@ -8,7 +8,7 @@ const {Recipe,Type} =require("../db")
 const recipesApi = async () =>{
   try {
   const recipes = (await axios(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${YOUR_API_KEY}&addRecipeInformation=true&number=100`)).data.results
-  const dataApi= recipes.map(e =>({
+  const dataApi= await recipes.map(e =>({
      id : e.id,
     name: e.title,
     image:e.image, 
@@ -24,7 +24,7 @@ const recipesApi = async () =>{
 }
 
 const dataBRecipe = async () =>{
-      return (await Recipe.findAll({
+      return await Recipe.findAll({
         include : {
           model: Type,
           attributes: ["name"],
@@ -32,26 +32,26 @@ const dataBRecipe = async () =>{
             attributes : [],
           },
         }
-      }))
+      })
     }
 
     
     const allRecipes = async ()=>{
       const infoApi= await recipesApi();
       const infoDb= await dataBRecipe();
-      // const dbjoin=infoDb.map(e =>{
-      //   return {
-      //     id:e.id,
-      //     name:e.name,
-      //     image:e.image,
-      //     types:e.types !== [""] ?e.types.map(e=>e.name).join(", ") :"Sin Tipos",
-      //     dishTypes : e.dishTypes,
-      //       healthscore: e.healthScore,
+      const dbjoin=infoDb.map(e =>{
+        return {
+          id:e.id,
+          name:e.name,
+          image:e.image,
+          types:e.types !== [""] ?e.types.map(e=>e.name).join(", ") :"Sin Tipos",
+          dishTypes : e.dishTypes,
+            healthscore: e.healthScore,
 
-      //   }
-      // })
+        }
+      })
   
-    return infoApi.concat(infoDb)
+    return infoApi.concat(dbjoin)
       
     }
  
