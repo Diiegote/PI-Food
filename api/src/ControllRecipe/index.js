@@ -36,7 +36,7 @@ const dataBRecipe = async () =>{
     }
 
     
-    const allRecipes = async (req,res)=>{
+    const allRecipes = async ()=>{
       const infoApi= await recipesApi();
       const infoDb= await dataBRecipe();
       const dbjoin=infoDb.map(e =>{
@@ -50,7 +50,7 @@ const dataBRecipe = async () =>{
 
         }
       })
-    res.send(infoApi.concat(dbjoin))
+    return infoApi.concat(dbjoin)
       
     }
  
