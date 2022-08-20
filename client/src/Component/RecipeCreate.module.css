@@ -1,0 +1,261 @@
+.holeForm{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(82, 73, 60, 0.729);
+}
+.formName{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2em;
+  font-style: italic;
+  text-transform: capitalize;
+  text-shadow: 1px 2px 10px rgba(0,0,0,0.75);
+   background: radial-gradient(antiquewhite,rgba(250, 235, 215, 0.765),transparent);
+    box-shadow: 0.4em 0.4em 0.7em rgba(0,0,0,1),
+    0.65em 1.2em 1.1em rgb(63, 62, 62);
+    padding: 1em;
+    border-radius: 1em;
+  
+}
+.formCard form{
+    width: 95%;
+    
+    display: flex; 
+    flex-direction: column;
+    overflow: wrap;
+    justify-content: center;
+    align-self: center;
+    border-top-left-radius: 2em;
+    border-top-right-radius:2em;
+    border-bottom-left-radius:5em ;
+    border-bottom-right-radius:5em ;
+}
+.formCard{
+    padding: 3em;
+    margin:auto;
+    width: 90%;
+
+    border-top-left-radius: 3em;
+    border-top-right-radius:3em;
+    border-bottom-left-radius:5em ;
+    border-bottom-right-radius:5em ;
+
+}
+.upperDiv{
+    padding-top: 3em;
+    padding-bottom: 1em;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    border-color: black;
+    border-style: dotted;
+    border-top-left-radius: 3em;
+    border-top-right-radius:7em;
+    border-bottom-left-radius:7em ;
+    border-bottom-right-radius:3em ;
+    background: radial-gradient(antiquewhite,rgba(250, 235, 215, 0.765),transparent);
+    box-shadow: 0.4em 0.4em 0.7em rgba(0,0,0,1),
+    0.65em 1.2em 1.1em rgb(63, 62, 62);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-style: italic;
+  padding: 5em;
+}
+.div1 input{
+    margin-bottom: .5em;
+    background-color: transparent;
+    border-top: black;
+    border-right:black;
+    border-left:black;
+}
+.div2 input{
+    
+    background-color: transparent;
+    border-top: black;
+    border-right:black;
+    border-left:black;
+
+}
+
+.div2{
+    padding: 5em;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    border-color: black;
+    border-style: dotted;
+    border-top-left-radius: 7em;
+    border-top-right-radius:3em;
+    border-bottom-left-radius:3em ;
+    border-bottom-right-radius:7em ;
+    background: radial-gradient(antiquewhite,rgba(250, 235, 215, 0.765),transparent);
+    box-shadow: 0.4em 0.4em 0.7em rgba(0,0,0,1),
+    0.65em 1.2em 1.1em rgb(63, 62, 62);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-style: italic;
+}
+.divHs{
+    display:flex;
+    flex-direction: row;
+}
+.bottomDiv{
+    display: flex;
+    width: 90%;
+    height: 25em;
+    padding: 2em;
+    border-top-left-radius: 3em;
+    border-top-right-radius:3em;
+    border-bottom-left-radius:7em ;
+    border-bottom-right-radius:7em ;
+    background: radial-gradient(antiquewhite,rgba(250, 235, 215, 0.765),transparent);
+    box-shadow: 0.4em 0.4em 0.7em rgba(0,0,0,1),
+    0.65em 1.2em 1.1em rgb(63, 62, 62);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-style: italic;
+    justify-content: center;
+    margin-left: 5.5em;
+}
+.bottomDiv select{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-style: italic;
+    background-color: antiquewhite;
+    border-bottom-left-radius:1em ;
+    border-top-right-radius:1em ;
+    border-bottom-right-radius:.3em;
+    border-top-left-radius:.3em
+
+}
+
+.typesForm{
+
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    transform: translate(4em,-33em);
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+    border-bottom-left-radius: 7em;
+    border-bottom-right-radius: 7em;
+    background: radial-gradient(antiquewhite,rgba(250, 235, 215, 0.765),transparent);
+    box-shadow: 0.4em 0.4em 0.7em rgba(0,0,0,1),0.65em 1.2em 1.1em rgb(63, 62, 62);
+    margin-left: 2em;
+    margin-top: -1em;
+
+}
+.selectedDiet{
+    margin: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(250, 235, 215, 0.8);
+    border-style: dotted;
+    border-top-left-radius: 0.8em;
+    border-top-right-radius:2em;
+    border-bottom-left-radius:2em ;
+    border-bottom-right-radius:0.8em ;
+    width: 20%;
+    height: 12%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 540;
+    text-shadow: 1em;
+    text-transform: capitalize;
+    color: rgb(54, 54, 54);
+}
+.selectedDiet button{
+    height: 50%;
+    width: 40%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-style: italic;
+    border-top-left-radius: .7em;
+    border-top-right-radius:.3em;
+    border-bottom-left-radius:.3em ;
+    border-bottom-right-radius:.7em ;
+    background-color: antiquewhite;
+}
+button:hover{
+    transform: translateY(-.5em);
+    transition: 0.4s;
+}
+.selectedDiet:hover{
+    transform: translateY(-.3em);
+    transition: 0.4s;
+}
+.refresh{
+    margin-top: 2em;
+    height: 4em;
+    width: 10em;
+    border-bottom-left-radius: 3em;
+    border-top-left-radius: .6em;
+    border-top-right-radius: .6em;
+    border-bottom-right-radius:3em;
+    box-shadow: 0.4em 1.3em 1em rgba(0,0,0,1),
+    0.65em 1.2em 1.1em rgb(63, 62, 62),
+    0.85em 1.2em 1.3em rgba(0,0,0,1);
+    background-color: rgba(250, 235, 215, 0.8);
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 1em;
+    color: rgb(54, 54, 54);
+}
+span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-style: italic;
+}
+.createBtn button{
+    transform: translate(70em,-19em);
+    width: 10em;
+    height: 15em;
+    border-bottom-left-radius: 3em;
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+    border-bottom-right-radius:3em;
+    box-shadow:0.65em 1.2em 1.1em rgb(63, 62, 62);
+    background-color: rgba(250, 235, 215, 0.8);
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 1em;
+    color: rgb(54, 54, 54);
+    text-orientation: upright;
+}
+.div1 p {
+    color:brown ;
+}
+.div2 p{
+    color: brown;
+}
+.div2 .divHS p{
+    color: black;
+}
+.typesForm .error p{
+    color: brown;
+}

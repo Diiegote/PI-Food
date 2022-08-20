@@ -1,0 +1,42 @@
+.searchDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.srcIn{
+    width:30%;
+    height: 95%;
+    background-color:rgba(250, 235, 215, 0.82);
+    margin-top: 0.5em;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius:0.8em ;
+    border-bottom-right-radius:hidden ;
+    font-size: 2em;
+    padding-left: 1em;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 450;
+    text-shadow: 1em;
+    transform: translateX(2em);
+}
+.srcBtn{
+    height: 96%;
+    border-top-right-radius:0.4em;
+    border-bottom-right-radius:1.2em ;
+    transform: translate(5em,.6em);
+    background-color: rgba(250, 235, 215, 0.862);
+    font-size: 1em;
+    border:hidden;
+    border-left: black;
+    
+    z-index: 0;
+  width: 7%;
+}
+.srcIn:active{
+    border:hidden
+}

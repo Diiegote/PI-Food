@@ -1,0 +1,114 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.infosparents51.fr/sites/infosparents/files/styles/w1200/public/action/image/o8rdsc0.jpg?itok=6mAM8Ah2);
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;  
+}
+.holeHome{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+}
+.CardsContainer{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    margin-top: 1em;
+    margin-right: -1em;
+    margin-left: 12em ;
+
+}
+.selectorsdiv{
+    margin-left: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    height: 2em;
+}
+.nameDiv{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(250, 235, 215, 0);
+    height: 4em;
+    padding: 1em;
+    transform: translateY(-3em);
+}
+.selectors1{
+    margin-left: 3em;
+    margin-right: 3em;
+    width: 11%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom-right-radius:0.5em ;
+    border-bottom-left-radius: 3em;
+    border-top-left-radius:0.5em ;
+    border-top-right-radius: 3em;
+    text-align: center;
+    box-shadow: 0.4em 1.3em 1em rgba(0,0,0,1),
+    0.65em 1.2em 1.1em rgb(63, 62, 62),
+    0.85em 1.2em 1.3em rgba(0,0,0,1);
+    background-color: antiquewhite;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 1em;
+    color: rgb(54, 54, 54);
+}
+.selectors1:hover{
+    transform: translateY(-0.75em);
+    transition: 0.5s;
+}
+.selectors2{
+    margin-left: 3em;
+    margin-right: 3em;
+    width: 11%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom-right-radius: 3em;
+    border-bottom-left-radius: 0.5em;
+    border-top-left-radius: 3em;
+    border-top-right-radius: 0.5em;
+    text-align: center;
+    box-shadow: 0.4em 1.3em 1em rgba(0,0,0,1),
+    0.65em 1.2em 1.1em rgb(63, 62, 62),
+    0.85em 1.2em 1.3em rgba(0,0,0,1);
+    background-color: antiquewhite;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 1em;
+    color: rgb(54, 54, 54);
+}
+.selectors2:hover{
+    transform: translateY(-0.75em);
+    transition: 0.5s;
+}
+.navDiv{
+
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    margin:auto
+}
+.loader{
+    width: 30em;
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    margin-left:32em ;
+    
+}
+.loader img{
+    height: 25em;
+    width: 25em;
+    background-color: antiquewhite;
+    box-shadow: 0.4em 1.3em 1em rgba(0,0,0,1),
+    0.65em 1.2em 1.1em rgb(63, 62, 62),
+    0.85em 1.2em 1.3em rgba(0,0,0,1);
+}

@@ -1,0 +1,66 @@
+.card{
+    
+    margin: .7rem;
+    box-shadow: 0.4em 1.3em 1.5em rgba(0,0,0,1),
+    0.65em 1.6em 1.6em rgb(63, 62, 62),
+    0.85em 1.8em 1.8em rgba(0,0,0,1);
+    padding: 1rem;
+    background-size: cover;
+    background-position: absolute;
+    height: 60%;
+    width: 55%;
+    justify-content: space-between;
+    border-color: cornsilk, black;
+    border-radius: 1.9em;
+    border-style:inset;
+}
+.card:hover{
+    transform: translate(-1.7em,-1.4em);
+    background-color: rgba(255, 235, 205, 0.574);
+    transition: 0.5s;
+    FONT-VARIANT: JIS04;
+    background-position: center;
+    justify-content: space-between;
+    border-bottom-right-radius: 7.9em;
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 7.4em;
+    border-top-right-radius: 0.5em;
+
+    
+}
+.cardContent{
+    opacity: 0;
+    text-decoration: wavy;
+    text-transform: uppercase;
+}
+.cardContent:hover{
+    opacity: 1;
+    transition: 0.5;
+}
+.cardName{
+    text-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.8);
+    color:antiquewhite;
+    font-size: 1em;
+}
+.contCard{
+    height: 10em;
+    width: 10em;
+    margin-left: 4.7em;
+    background-color: rgba(250, 235, 215, 0.8);
+    border-bottom-right-radius: 4em;
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 4em;
+    border-top-right-radius: 0.5em;
+}
+.cardDish {
+    text-decoration: none;
+    color: black;
+
+}
+.cardTypes{
+    text-decoration: none;
+    color: black;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,95 @@
+.holeRecipe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.recipeDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 5em;
+    width: 70%;
+    background-color: rgba(250, 235, 215, 0.821);
+    border-bottom-right-radius: 7em;
+    border-bottom-left-radius:7em ;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+    text-align: center;
+    box-shadow: 0.4em 1.3em 1em rgba(0,0,0,1),
+    0.65em 1.2em 1.1em rgb(63, 62, 62),
+    0.85em 1.2em 1.3em rgba(0,0,0,1);
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 1em;
+    color: rgb(54, 54, 54);
+}
+img{
+    margin: auto;
+    border-bottom-right-radius: 5em;
+    border-bottom-left-radius:5em ;
+    border-top-left-radius: .8em;
+    border-top-right-radius: .8em;
+    height: 30%;
+    width: 45%;
+}
+.sumDiv{
+    margin: auto;
+    width: 60%;
+    border-style: dotted;
+    border-bottom: hidden;
+    padding: 2em;
+
+    
+
+}
+.stepDiv{
+    margin: auto;
+    width: 60%;
+    border-style: dotted;
+    border-top: hidden;
+    margin-bottom: 3em;
+    padding: 3em;
+ 
+}
+h2{
+    font-size: 3em;
+}
+h3{
+    font-size:1.5em;
+}
+h4{
+    font-size:1.3em;
+    margin:1em
+}
+.sumDiv p{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.recipeDetail img{
+  margin: 5em;
+  margin-left: 21em;
+}
+.loader{
+    width: 30em;
+    height: 25em;
+    display: flex;
+    justify-content: center;
+    margin-left:43em ;
+}
+.loader img{
+    height: 30em;
+    width: 30em;
+    background-color: antiquewhite;
+    box-shadow: 0.4em 1.3em 1em rgba(0,0,0,1),
+    0.65em 1.2em 1.1em rgb(63, 62, 62),
+    0.85em 1.2em 1.3em rgba(0,0,0,1);
+}

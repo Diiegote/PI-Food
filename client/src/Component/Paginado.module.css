@@ -1,0 +1,77 @@
+.a{
+    text-decoration: none;
+ }
+ .container{
+ 
+     justify-content: center;
+     display: flex;
+     flex-wrap: nowrap;
+
+    }   
+ .btnList{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin:1.9em;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-bottom: -1em;
+}
+
+.btn{
+    background-image: url("./botonPaginado.jpeg");
+    background-position: center;
+    background-size: 2em;
+    height: 1.5em;
+    width:1.5em;
+    border-color: rgba(0, 0, 255, 0);
+    border-radius: 50%;
+    background-color: rgba(36, 136, 224, 0);
+    cursor: grab;
+    font-weight: 700;
+    font-size: 2em;
+    color: hwb(240 97% 1% / 0);
+    box-shadow: 0.4em 0.4em 0.7em rgba(0,0,0,1),
+    0.65em 1.2em 1.1em rgb(63, 62, 62);
+}
+.btn:hover{
+position: static;
+height: 1.8em;
+width: 1.8em;
+color: rgb(13, 13, 11);
+transform: translateY(-0.1em);
+transition: 1s;
+background-color: rgb(221, 220, 201);
+background-image: none;
+box-shadow: 0.4em  1em rgba(0,0,0,0.5)
+}
+.btnList:hover .btn{
+    transform: rotate(360deg);
+    transition: .8s;
+    box-shadow: none;
+
+}
+.currentbtn{
+    background-position: center;
+    background-size: 2em;
+    height: 1.5em;
+    width:1.5em;
+    border-color: rgba(0, 0, 255, 0);
+    border-radius: 50%;
+    background-color: rgba(36, 136, 224, 0);
+    cursor: grab;
+    font-weight: 700;
+    font-size: 2em;
+    color: hwb(240 97% 1% / 0);
+    box-shadow: 0.4em 0.4em 0.7em rgba(0,0,0,1),
+    0.65em 1.2em 1.1em rgb(63, 62, 62);
+    position: static;
+height: 1.8em;
+width: 1.8em;
+color: rgb(13, 13, 11);
+transform: translateY(-0.1em);
+transition: 1s;
+background-color: rgb(221, 220, 201);
+background-image: none;
+box-shadow: 0.4em  1em rgba(0,0,0,0.5)
+}
