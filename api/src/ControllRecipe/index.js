@@ -39,19 +39,19 @@ const dataBRecipe = async () =>{
     const allRecipes = async ()=>{
       const infoApi= await recipesApi();
       const infoDb= await dataBRecipe();
-      const dbjoin=infoDb.map(e =>{
-        return {
-          id:e.id,
-          name:e.name,
-          image:e.image,
-          types:e.types !== [""] ?e.types.map(e=>e.name).join(", ") :"Sin Tipos",
-          dishTypes : e.dishTypes,
-            healthscore: e.healthScore,
+      // const dbjoin=infoDb.map(e =>{
+      //   return {
+      //     id:e.id,
+      //     name:e.name,
+      //     image:e.image,
+      //     types:e.types !== [""] ?e.types.map(e=>e.name).join(", ") :"Sin Tipos",
+      //     dishTypes : e.dishTypes,
+      //       healthscore: e.healthScore,
 
-        }
-      })
-      const concat= await infoApi.concat(dbjoin)
-    return await concat
+      //   }
+      // })
+  
+    return infoApi.concat(infoDb)
       
     }
  
