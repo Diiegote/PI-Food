@@ -50,7 +50,7 @@ const dataBRecipe = async () =>{
 
         }
       })
-      const concat= infoApi.concat(dbjoin)
+      const concat= await infoApi.concat(dbjoin)
     return concat
       
     }
