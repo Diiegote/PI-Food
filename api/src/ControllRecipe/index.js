@@ -50,6 +50,7 @@ const dataBRecipe = async () =>{
 
         }
       })
+      console.log(dbjoin)
   
     return infoApi.concat(dbjoin)
       
