@@ -1,6 +1,6 @@
 const axios = require("axios");
-const {YOUR_API_KEY} = process.env
 require("dotenv").config()
+const {YOUR_API_KEY} = process.env
 const {Recipe,Type} =require("../db")
 
 
@@ -54,5 +54,5 @@ const dataBRecipe = async () =>{
     return infoApi.concat(dbjoin)
       
     }
- 
+    
     module.exports= {allRecipes}
