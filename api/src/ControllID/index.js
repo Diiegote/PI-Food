@@ -1,5 +1,5 @@
 const axios = require("axios");
-const {YOUR_API_KEY} = process.env
+// const {YOUR_API_KEY} = process.env
 const {Recipe,Type} =require("../db")
 // require("dotenv").config()
 
@@ -7,7 +7,7 @@ const getId = async (req,res)=>{
   let {id} = req.params;
   try {
     if(!id.includes("-")){
- const api = (await axios(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${YOUR_API_KEY}`)).data
+ const api = (await axios(`https://api.spoonacular.com/recipes/${id}/information?apiKey=2bf87076f78a4f6fa5a992842ef083cc`)).data
  const infoApi = {
    id:api.id,
    name:api.title,
