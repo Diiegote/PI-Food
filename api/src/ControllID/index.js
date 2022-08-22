@@ -7,7 +7,7 @@ const getId = async (req,res)=>{
   let {id} = req.params;
   try {
     if(!id.includes("-")){
- const api = (await axios(`https://api.spoonacular.com/recipes/${id}/information?apiKey=2bf87076f78a4f6fa5a992842ef083cc`)).data
+ const api = (await axios(`https://api.spoonacular.com/recipes/${id}/information?apiKey=c4084f88df43462c8a74ebcf56dc459e`)).data
  const infoApi = {
    id:api.id,
    name:api.title,
