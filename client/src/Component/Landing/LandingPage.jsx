@@ -11,8 +11,8 @@ export default function LandingPage() {
         <div className={style.opac}>
           <div className={style.cardShadow}>
             <div className={style.landingCard}>
-              <div className={style.content}> <h2 className={style.title}>Projecto Food</h2>
-                <p className={style.welcome}>Bienvenidos a mi Projecto,<br />
+              <div className={style.content}> <h2 className={style.title}>Proyecto Food</h2>
+                <p className={style.welcome}>Bienvenidos a mi Proyecto,<br />
                   encontraras varias ideas<br />
                   para comer<br />
                   o podras crear tus propias recetas</p>
