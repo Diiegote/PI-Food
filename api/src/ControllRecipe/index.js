@@ -7,7 +7,7 @@ const {Recipe,Type} =require("../db")
 
 const recipesApi = async () =>{
   try {
-  const recipes = (await axios(`https://api.spoonacular.com/recipes/complexSearch?apiKey=c4084f88df43462c8a74ebcf56dc459e&addRecipeInformation=true&number=100`)).data.results
+  const recipes = (await axios(`https://api.spoonacular.com/recipes/complexSearch?apiKey=349da89437aa469fa7747b15547b184c&addRecipeInformation=true&number=100`)).data.results
   const dataApi= await recipes.map(e =>({
      id : e.id,
     name: e.title,
