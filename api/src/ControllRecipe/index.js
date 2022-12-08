@@ -1,13 +1,13 @@
 const axios = require("axios");
 require("dotenv").config()
-// const {YOUR_API_KEY} = "2bf87076f78a4f6fa5a992842ef083cc"
+ const {YOUR_API_KEY} = process.env
 const {Recipe,Type} =require("../db")
 
 
 
 const recipesApi = async () =>{
   try {
-  const recipes = (await axios(`https://api.spoonacular.com/recipes/complexSearch?apiKey=349da89437aa469fa7747b15547b184c&addRecipeInformation=true&number=100`)).data.results
+  const recipes = (await axios(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${YOUR_API_KEY}&addRecipeInformation=true&number=100`)).data.results
   const dataApi= await recipes.map(e =>({
      id : e.id,
     name: e.title,
