@@ -120,7 +120,7 @@ const Home = () => {
                         />
                       </div>
                     )
-                  }) : <div className={style.loader}><img src={loader} alt="CARGANDOOOO" /></div>
+                  }) : <div className={style.loader}><img src={loader} alt="CARGANDO" /></div>
               }
             </div>
           </div>
