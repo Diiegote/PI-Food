@@ -1,7 +1,7 @@
 body{
     height: 100%;
     width: 100%;
-    background-image: url(https://www.infosparents51.fr/sites/infosparents/files/styles/w1200/public/action/image/o8rdsc0.jpg?itok=6mAM8Ah2);
+    background-image: url("fondo-de-pantalla.jpg");
     background-size: cover;
     background-position: fixed;
     background-repeat: no-repeat;  

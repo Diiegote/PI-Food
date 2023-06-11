@@ -43,14 +43,15 @@ const Home = () => {
       setCurrentPage(1)
     }
     
-    const [order, setOrder] = useState('');
+    const [order, setOrder] = useState('OrdenAlfabetico');
+    
     function handleOrderAZ(e) {
       dispatch(getOrderName(e.target.value))
       setCurrentPage(1)
       setOrder(`Ordenado ${e.target.value}`)
   }
 
-  const [orderHScore, setOrderHScore] = useState('')
+  const [orderHScore, setOrderHScore] = useState('Ordenado por p.salud')
   function handleOrderHScore(e) {
     dispatch(getOrderHScore(e.target.value))
     setCurrentPage(1)
@@ -73,7 +74,7 @@ const Home = () => {
         <div className={style.nameDiv}> <SearchBar setCurrentPage={setCurrentPage} /></div>
         <div>
           <div className={style.selectorsdiv}>
-            <select className={style.selectors1} defaultValue="OrdenAlfabetico" onChange={e => handleOrderAZ(e)}>
+            <select className={style.selectors1} defaultValue={order} onChange={e => handleOrderAZ(e)}>
               <option disabled >OrdenAlfabetico</option>
               <option value='A-Z'>A-Z</option>
               <option value='Z-A'>Z-A</option>
@@ -85,7 +86,7 @@ const Home = () => {
                 <option key={t.id} value={t.name}>{t.name}</option>
               ))}
             </select>
-            <select className={style.selectors1} defaultValue="Ordenado por p.salud" onChange={e => handleOrderHScore(e)}>
+            <select className={style.selectors1} defaultValue= {orderHScore} onChange={e => handleOrderHScore(e)}>
               <option disabled >Ordenado por p.salud</option>
               <option value='Max-Min'>Max-Min</option>
               <option value='Min-Max'>Min-Max</option>
