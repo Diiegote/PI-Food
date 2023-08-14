@@ -9,7 +9,7 @@ import store from "./Redux/Store/store"
 import axios from "axios"
 
 // require("dotenv").config();
-axios.defaults.baseURL= "https://back-end-food-production-7c75.up.railway.app/"
+axios.defaults.baseURL= "https://backendfood.fly.dev/"
 
 
 ReactDOM.render(
